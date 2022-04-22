@@ -5,10 +5,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/github-graph.ts',
-      formats: ['es']
-    },
-    rollupOptions: {
-      external: /^lit/
+      formats: ['es'],
+      fileName: (format) => `index.${format}.js`
     }
   }
 })
