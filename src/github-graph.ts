@@ -40,7 +40,7 @@ export class GithubGraph extends LitElement {
 
   render() {
     const tooltipStyle = styleMap(this.tooltip.postion || {})
-    return html` <div class="contributions">
+    return html` <div class="contributions" style=${this.style.cssText}>
       <h2 class="contributions-header">${this.header}</h2>
       <div class="contributions-chart" @mouseover=${this._mouseOverHandler} @mouseout=${this._mouseOutHandler}>
         ${unsafeStatic(this.chart)}
