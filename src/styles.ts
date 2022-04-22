@@ -12,6 +12,34 @@ const style = css`
   h2.contributions-header {
     margin-bottom: 0;
   }
+  .contributions {
+    --color-calendar-graph-day-bg: #ebedf0;
+    --color-calendar-graph-day-border: rgba(27, 31, 35, 0.06);
+    --color-calendar-graph-day-L1-bg: #9be9a8;
+    --color-calendar-graph-day-L2-bg: #40c463;
+    --color-calendar-graph-day-L3-bg: #30a14e;
+    --color-calendar-graph-day-L4-bg: #216e39;
+    --color-calendar-graph-day-L4-border: rgba(27, 31, 35, 0.06);
+    --color-calendar-graph-day-L3-border: rgba(27, 31, 35, 0.06);
+    --color-calendar-graph-day-L2-border: rgba(27, 31, 35, 0.06);
+    --color-calendar-graph-day-L1-border: rgba(27, 31, 35, 0.06);
+    animation: fadein 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 600px;
+  }
+  .contributions svg {
+    cursor: default;
+    max-width: 100%;
+    width: 100%;
+  }
+  .contributions svg text {
+    font-size: 12px;
+  }
+  .contributions rect:hover {
+    opacity: 0.5;
+  }
   .ContributionCalendar.days-selected .ContributionCalendar-day {
     opacity: 0.5;
   }
@@ -56,33 +84,6 @@ const style = css`
   }
   .ContributionCalendar[data-holiday='halloween'] .ContributionCalendar-day[data-level='4'] {
     fill: var(--color-calendar-halloween-graph-day-L4-bg);
-  }
-  .contributions {
-    --color-calendar-graph-day-bg: #ebedf0;
-    --color-calendar-graph-day-border: rgba(27, 31, 35, 0.06);
-    --color-calendar-graph-day-L1-bg: #9be9a8;
-    --color-calendar-graph-day-L2-bg: #40c463;
-    --color-calendar-graph-day-L3-bg: #30a14e;
-    --color-calendar-graph-day-L4-bg: #216e39;
-    --color-calendar-graph-day-L4-border: rgba(27, 31, 35, 0.06);
-    --color-calendar-graph-day-L3-border: rgba(27, 31, 35, 0.06);
-    --color-calendar-graph-day-L2-border: rgba(27, 31, 35, 0.06);
-    --color-calendar-graph-day-L1-border: rgba(27, 31, 35, 0.06);
-    animation: fadein 1s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contributions svg {
-    cursor: default;
-    max-width: 100%;
-    width: 100%;
-  }
-  .contributions svg text {
-    font-size: 12px;
-  }
-  .contributions rect:hover {
-    opacity: 0.5;
   }
 `
 
