@@ -1,9 +1,9 @@
 {
   "name": "wc-github-graph",
-  "version": "0.0.1",
-  "main": "dist/github-graph.es.js",
+  "version": "0.0.2",
+  "main": "dist/index.es.js",
   "exports": {
-    ".": "./dist/github-graph.es.js"
+    ".": "./dist/index.es.js"
   },
   "types": "types/github-graph.d.ts",
   "files": [
