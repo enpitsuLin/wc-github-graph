@@ -13,6 +13,9 @@ export class GithubGraph extends LitElement {
       max-width: 800px;
     }
   `
+  @property({ type: String })
+  username = ''
+
   @state()
   state: GraphState = 'loading'
 
