@@ -1,6 +1,5 @@
 import { css, LitElement } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
-import { styleMap } from 'lit/directives/style-map.js'
 import { html } from 'lit/static-html.js'
 
 @customElement('graph-tooltip')
@@ -40,7 +39,7 @@ export class Tooltip extends LitElement {
 
   protected render(): unknown {
     return html`
-      <div class="tooltip" style=${styleMap(this.style as Record<string, any>)}>
+      <div class="tooltip" style=${this.style.cssText}>
         <strong>Date:</strong> ${this.date}<br />
         <strong>Contributions:</strong> ${this.count}
       </div>
